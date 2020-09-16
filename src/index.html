@@ -6,8 +6,101 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link href="assets/cdn.shopify.com/s/files/1/0422/7301/3915/t/2/assets/frame.scss4b2a.css?v=8281023216254798162" rel="stylesheet" type="text/css" media="all" /> 
+  <link href="assets/cdn.shopify.com/s/files/1/0422/7301/3915/t/2/assets/home-sections.scss21a7.css?v=14060740995873437843" rel="stylesheet" type="text/css" media="all" /> 
+  <link href="assets/cdn.shopify.com/s/files/1/0422/7301/3915/t/2/assets/style30bd.css?v=2480935230181657554" rel="stylesheet" type="text/css" media="all" />  
+  <link href="http://cdn.shopify.com/s/files/1/0422/7301/3915/t/2/assets/slick.scss?v=10122632354879939270" rel="stylesheet" type="text/css" media="all" />
+  <link href="assets/cdn.shopify.com/s/files/1/0422/7301/3915/t/2/assets/prettyPhotode1c.css?v=12757784511525754184" rel="stylesheet" type="text/css" media="all" />  
+  <link href="assets/cdn.shopify.com/s/files/1/0422/7301/3915/t/2/assets/animatea14e.css?v=17046942425478865338" rel="stylesheet" type="text/css" media="all" />
+  <link href="assets/cdn.shopify.com/s/files/1/0422/7301/3915/t/2/assets/font-all.minc83d.css?v=14597452402338798491" rel="stylesheet" type="text/css" media="all" /> 
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Nunito+Sans:300,300italic,400,500,600,400italic,600italic,700,700italic,800,800italic">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Playfair+Display+SC:300,300italic,400,500,600,400italic,600italic,700,700italic,800,800italic">
+  <script src="assets/code.jquery.com/jquery-3.2.1.min.js"></script>  
+
+  <script src="assets/cdn.shopify.com/s/files/1/0422/7301/3915/t/2/assets/header6070.js?v=10373096426439681222" type="text/javascript"></script>    
 </head>
-<body>
+<body >
   <app-root></app-root>
+  <div id="shopify-section-GDPR-modal" class="shopify-section">
+    <div id="accept-cookies" class="cookieMessage"> 
+      <div class="block-cookies">
+        <div class="des">
+          <p>The cookie settings on this website are set to 'allow all cookies' to give you the very best experience. Please click Accept Cookies to continue to use the site.
+    
+          
+          <a target="_blank" href="https://policies.google.com/" class="notification-cookies privacy-link">
+            privacy policy
+          </a>
+          
+          </p>  
+        </div>
+    
+        
+        <div class="group-action-links">     
+          <a href="#" class="notification-cookies accept_cookies_link btn" data-accept-cookie>
+            accept
+            <span class="icon">✔</span>
+          </a>      
+        </div>
+        
+      </div>   
+    </div>
+    
+    <style>
+    
+      #accept-cookies .block-cookies {
+        color:#fff;
+      }
+    
+      #accept-cookies .privacy-link {
+        color:#ffffff;
+      }
+      #accept-cookies .privacy-link:hover {
+    
+        color:#2db1e6;
+      }
+    
+      #accept-cookies{
+        background: #032b90;
+      }
+      
+      #accept-cookies .btn { background:#000000; color:#ffffff; }
+      #accept-cookies .btn:hover { background:#2db1e6; color:#ffffff; }
+        
+      @media (min-width: 1200px) {
+        #accept-cookies{
+          
+    
+          left:0;right:0;width:100%;max-width:100%;
+          
+        }
+    
+        #accept-cookies .group-action-links {   text-align:center; }
+    
+      } 
+    
+    </style>
+    
+    <script>
+      $(document).ready(function() {
+        var gdprCookie = $('#accept-cookies');
+    
+        gdprCookie.show();
+    
+        if ($.cookie('cookieMessage') == 'closed') {
+          gdprCookie.remove();
+        }
+    
+        gdprCookie.find('[data-accept-cookie]').on('click', function(e) {
+          e.preventDefault();
+          gdprCookie.remove();
+          $.cookie('cookieMessage', 'closed', {expires: 1, path:'/'});
+        });
+      })
+    </script>
 </body>
 </html>

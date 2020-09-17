@@ -16,11 +16,11 @@ import { OrderlistComponent } from './common/order-pages/orderlist/orderlist.com
 import { OrderdetailsComponent } from './common/order-pages/orderdetails/orderdetails.component';
 
 
-
 import { UsercartComponent } from './common/cart-pages/usercart/usercart.component';
 import { CartcheckoutComponent } from './common/cart-pages/cartcheckout/cartcheckout.component';
 
 import { PaymentConfirmationComponent } from './common/payment-pages/payment-confirmation/payment-confirmation.component';
+import { ContactsupportComponent } from './common/support-pages/contactsupport/contactsupport.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -29,6 +29,7 @@ const routes: Routes = [
   { path: 'productdetail', component: ProductdetailComponent },
   { path: 'favourite', component: ProductwishlistComponent },
   { path: 'useraccount', component: UseraccountComponent },
+  { path: 'support', component: ContactsupportComponent },
   { path: 'userpanel', component:  UserpanelComponent },
   { path: 'myorder', component:  OrderlistComponent },
   { path: 'orderdetail', component: OrderdetailsComponent },
@@ -43,7 +44,7 @@ const routes: Routes = [
 })
 export class AppRoutingModule { }
 export const routingSharedComponents=[HeaderComponent,FooterComponent,HomeComponent];
-export const routingUserComponents=[ UseraccountComponent,UserpanelComponent];
+export const routingUserComponents=[ UseraccountComponent,UserpanelComponent,ContactsupportComponent];
 export const routingProductComponents=[ ProductlistComponent, ProductdetailComponent,ProductwishlistComponent];
 export const routingOrderComponents=[ OrderlistComponent,OrderdetailsComponent];
 export const routingCartComponents=[ UsercartComponent, CartcheckoutComponent ];

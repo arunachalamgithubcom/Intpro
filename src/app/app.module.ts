@@ -7,6 +7,8 @@ import { HttpClientModule } from '@angular/common/Http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CookieService } from 'ngx-cookie-service';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { AboutusComponent } from './common/aboutus/aboutus.component';
+
 
 
 
@@ -20,7 +22,8 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
     routingOrderComponents,
     routingCartComponents,
     routingUserComponents,
-    routingPaymentComponents
+    routingPaymentComponents,
+    AboutusComponent,
   ],
   imports: [
     BrowserModule,

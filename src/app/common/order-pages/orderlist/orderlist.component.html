@@ -1,4 +1,8 @@
-<div class="container-fluid my-5 d-flex justify-content-center">
+<main class="main-home-content">
+    <div class="wrapper" style="
+    background: #e9ecef;
+  ">
+<div class="container-fluid my-5 d-flex justify-content-center" style="padding-top: 42px;">
     <div class="card card-1">
         <div class="card-header bg-white">
             <div class="media flex-sm-row flex-column-reverse justify-content-between ">
@@ -10,7 +14,7 @@
         </div>
         <div class="card-body">
           
-            <div class="row">
+            <div class="row" [routerLink]="['/orderdetail']">
                 <div class="col">
                     <div class="card card-2">
                         <div class="card-body">
@@ -48,7 +52,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row mt-4">
+            <div class="row mt-4" [routerLink]="['/orderdetail']">
                 <div class="col">
                     <div class="card card-2">
                         <div class="card-body">
@@ -94,3 +98,5 @@
       
     </div>
 </div>
+</div>
+</main>

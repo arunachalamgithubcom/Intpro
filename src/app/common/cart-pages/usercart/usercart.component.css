@@ -102,15 +102,15 @@ a {
 
 .btn-light {
     color: #ffffff;
-    background-color: #F44336;
+    background-color: #2db1e6;
     border-color: #f8f9fa;
     font-size: 12px
 }
 
 .btn-light:hover {
     color: #ffffff;
-    background-color: #F44336;
-    border-color: #F44336
+    background-color: #2db1e6;
+    border-color: #2db1e6
 }
 
 .btn-apply {

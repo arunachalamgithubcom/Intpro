@@ -1,4 +1,20 @@
 
-.wide--one-third {
-    width: 21.333% !important;
+.mt-50 {
+    margin-top: 50px
+}
+
+.mb-50 {
+    margin-bottom: 50px
+}
+
+.bg-teal-400 {
+    background-color: #26a69a
+}
+
+a {
+    text-decoration: none !important
+}
+
+.fa {
+    color: red
 }

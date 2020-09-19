@@ -46,7 +46,7 @@ right: 0;
 top: 0;}
 .newsletter-section form .btn:hover:before{background-color:inherit;} 
 
-#shopify-section-footer-model-1{margin:45px 0 0; float:left; width:100%;}
+#shopify-section-footer-model-1{margin:0px 0 0; float:left; width:100%;}
 .newsletter-section form .btn { fill:#fff; background:#2db1e6;}
 .newsletter-section form .btn:hover  { fill:#fff; background:#000;}
 .newsletter-section form .btn svg g { fill:#fff; stroke: #fff;}

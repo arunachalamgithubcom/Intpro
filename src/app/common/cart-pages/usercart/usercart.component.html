@@ -1,6 +1,7 @@
 <main class="main-home-content ">
-    <div class="wrapper" style="
+    <div class="wrapper"  style="
     background: #e9ecef;
+    padding-bottom: 43px;
 ">
         <div class="grid-uniform">
           <div class="grid__item">
@@ -35,7 +36,7 @@
                                         <option>4</option>
                                     </select> </td>
                                 <td>
-                                    <div class="price-wrap"> <var class="price">$10.00</var> <small class="text-muted"> $9.20 each </small> </div>
+                                    <div class="price-wrap"> <var class="price"><i  class="fa fa-inr"></i>10.00</var> <small class="text-muted"> <i  class="fa fa-inr"></i> 9.20 each </small> </div>
                                 </td>
                                 <td class="text-right d-none d-md-block"> <a data-original-title="Save to Wishlist" title="" href="" class="btn btn-light" data-toggle="tooltip" data-abc="true"> <i class="fa fa-heart"></i></a> <a href="" class="btn btn-light" data-abc="true"> Remove</a> </td>
                             </tr>
@@ -55,7 +56,7 @@
                                         <option>4</option>
                                     </select> </td>
                                 <td>
-                                    <div class="price-wrap"> <var class="price">$15</var> <small class="text-muted"> $12 each </small> </div>
+                                    <div class="price-wrap"> <var class="price"><i  class="fa fa-inr"></i>15</var> <small class="text-muted"> <i  class="fa fa-inr"></i> 12 each </small> </div>
                                 </td>
                                 <td class="text-right d-none d-md-block"> <a data-original-title="Save to Wishlist" title="" href="" class="btn btn-light" data-toggle="tooltip" data-abc="true"> <i class="fa fa-heart"></i></a> <a href="" class="btn btn-light btn-round" data-abc="true"> Remove</a> </td>
                             </tr>
@@ -74,7 +75,7 @@
                                         <option>3</option>
                                     </select> </td>
                                 <td>
-                                    <div class="price-wrap"> <var class="price">$9</var> <small class="text-muted"> $6 each</small> </div>
+                                    <div class="price-wrap"> <var class="price"><i  class="fa fa-inr"></i>9</var> <small class="text-muted"> <i  class="fa fa-inr"></i> 6 each</small> </div>
                                 </td>
                                 <td class="text-right d-none d-md-block"> <a data-original-title="Save to Wishlist" title="" href="" class="btn btn-light" data-toggle="tooltip" data-abc="true"> <i class="fa fa-heart"></i></a> <a href="" class="btn btn-light btn-round" data-abc="true"> Remove</a> </td>
                             </tr>
@@ -84,30 +85,21 @@
             </div>
         </aside>
         <aside class="col-lg-3">
-            <div class="card mb-3">
-                <div class="card-body">
-                    <form>
-                        <div class="form-group"> <label>Have coupon?</label>
-                            <div class="input-group"> <input type="text" class="form-control coupon" name="" placeholder="Coupon code"> <span class="input-group-append"> <button class="btn btn-primary btn-apply coupon">Apply</button> </span> </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
             <div class="card">
                 <div class="card-body">
                     <dl class="dlist-align">
                         <dt>Total price:</dt>
-                        <dd class="text-right ml-3">$69.97</dd>
+                        <dd class="text-right ml-3"><i  class="fa fa-inr"></i> 69.97</dd>
                     </dl>
                     <dl class="dlist-align">
                         <dt>Discount:</dt>
-                        <dd class="text-right text-danger ml-3">- $10.00</dd>
+                        <dd class="text-right text-danger ml-3">- <i  class="fa fa-inr"></i> 10.00</dd>
                     </dl>
                     <dl class="dlist-align">
                         <dt>Total:</dt>
-                        <dd class="text-right text-dark b ml-3"><strong>$59.97</strong></dd>
+                        <dd class="text-right text-dark b ml-3"><strong><i  class="fa fa-inr"></i> 59.97</strong></dd>
                     </dl>
-                    <hr> <a href="#" class="btn btn-out btn-primary btn-square btn-main" data-abc="true"> Make Purchase </a> <a href="#" class="btn btn-out btn-success btn-square btn-main mt-2" data-abc="true">Continue Shopping</a>
+                    <hr> <a [routerLink]="['/productavailable']" class="btn btn-out btn-primary btn-square btn-main" data-abc="true" style="background:#0290da"> Make Purchase </a> <a  [routerLink]="['/checkout']" class="btn btn-out btn-success btn-square btn-main mt-2" data-abc="true" style="background:#0290da">Continue Shopping</a>
                 </div>
             </div>
         </aside>

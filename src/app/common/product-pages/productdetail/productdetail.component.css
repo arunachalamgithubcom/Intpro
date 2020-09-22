@@ -1,0 +1,72 @@
+.progress-bar {
+    height: 10px;
+    width: 100%;
+    background-color: #f5f5f5;
+    margin-bottom: 15px;
+    position: relative;
+  }
+
+  .progress {
+    background-color: #3bab3c;
+    height: 10px;
+    display: block;
+    -webkit-transition: width 0.7s ease;
+    -moz-transition: width 0.7s ease;
+    -ms-transition: width 0.7s ease;
+    -o-transition: width 0.7s ease;
+    transition: width 0.7s ease;
+  }
+  #AddToCartForm .selector-wrapper {
+    display: none
+  }
+
+  #productSelect-option-0-0 {
+    display: none;
+  }
+
+  #productSelect-option-0-0+.custom-style-select-box {
+    display: none !important;
+  }
+  #AddToCartForm .selector-wrapper {
+    display: none
+  }
+
+  #productSelect-option-0-1 {
+    display: none;
+  }
+
+  #productSelect-option-0-1+.custom-style-select-box {
+    display: none !important;
+  }
+  #AddToCartForm .selector-wrapper {
+    display: none
+  }
+
+  #productSelect-option-0-2 {
+    display: none;
+  }
+
+  #productSelect-option-0-2+.custom-style-select-box {
+    display: none !important;
+  }
+  #number_counter {
+    background: #e53939;
+    color: #fff;
+  }
+  .spr-icon {
+    color: #788ba1;
+  }
+
+  a.spr-icon:hover {
+    color: #303840;
+  }
+
+  .spr-container {
+    padding: 24px;
+    border-color: #ECECEC;
+  }
+
+  .spr-review,
+  .spr-form {
+    border-color: #ECECEC;
+  }
